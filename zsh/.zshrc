@@ -2,13 +2,18 @@ source $HOME/.zsh/antigen.zsh
 
 antigen use oh-my-zsh
 
-antigen bundle command-not-found
-antigen bundle git
-antigen bundle kennethreitz/autoenv
-antigen bundle nojhan/liquidprompt
-antigen bundle pip
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundles <<EOBUNDLES
+  archlinux
+  command-not-found
+  git
+  kennethreitz/autoenv
+  nojhan/liquidprompt
+  pip
+  sudo
+  zsh-users/zsh-autosuggestions
+  # zsh-users/zsh-syntax-highlighting
+  zdharma/fast-syntax-highlighting
+EOBUNDLES
 
 antigen apply
 

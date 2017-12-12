@@ -3,16 +3,16 @@ source $HOME/.zsh/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
-    archlinux
     command-not-found
     git
     kennethreitz/autoenv
     nojhan/liquidprompt
     pip
+    ssh-agent
     sudo
+    zdharma/fast-syntax-highlighting
     zsh-users/zsh-autosuggestions
     # zsh-users/zsh-syntax-highlighting
-    zdharma/fast-syntax-highlighting
 EOBUNDLES
 
 antigen apply

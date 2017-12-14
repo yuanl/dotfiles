@@ -3,7 +3,6 @@ source $HOME/.zsh/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
-    command-not-found
     git
     kennethreitz/autoenv
     nojhan/liquidprompt
@@ -12,7 +11,7 @@ antigen bundles <<EOBUNDLES
     sudo
     zdharma/fast-syntax-highlighting
     zsh-users/zsh-autosuggestions
-    # zsh-users/zsh-syntax-highlighting
+    zsh-users/zsh-completions
 EOBUNDLES
 
 antigen apply

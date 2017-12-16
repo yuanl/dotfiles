@@ -40,7 +40,7 @@ This function should only modify configuration layer settings."
      better-defaults
      common-lisp
      docker
-     editorconfig
+     ;; editorconfig
      emacs-lisp
      git
      github
@@ -51,7 +51,7 @@ This function should only modify configuration layer settings."
      python
      shell-scripts
      yaml
-    Prelude (chinese :variables
+     (chinese :variables
               chinese-enable-fcitx t
               chinese-default-input-method 'wubi
               )

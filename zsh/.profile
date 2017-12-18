@@ -21,6 +21,3 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ -x /bin/zsh ]; then
-    exec /bin/zsh
-fi

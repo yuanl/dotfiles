@@ -3,6 +3,7 @@ source $HOME/.zsh/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
+    command-not-found
     git
     kennethreitz/autoenv
     nojhan/liquidprompt

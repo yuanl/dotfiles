@@ -10,7 +10,12 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $sup Mod4
+
 set $wallpaper /home/CORPUSERS/28852506/.backgrounds/wallpaper.png
+
+gaps inner 10
+smart_gaps on
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -30,27 +35,28 @@ floating_modifier $mod
 bindsym $mod+Return exec termite -e /bin/zsh
 
 # editor: Alt+'
-bindsym $mod+apostrophe exec emacs
+bindsym $mod+apostrophe exec http_proxy="" emacs
 
 # lock screen
-bindsym Mod4+l exec i3lock -i $wallpaper
-bindsym $mod+F2 exec rofi -show drun -lines 3 -eh 2 -width 100 -padding 400 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
+bindsym $sup+l exec i3lock -i $wallpaper
+bindsym $sup+space exec rofi -show drun -lines 3 -eh 2 -width 100 -padding 400 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
 
 # start app
 #bindsym $mod+F12 exec chromium-browser
 
-exec --no-startup-id compton -b -f -CG --backend glx --paint-on-overlay --glx-no-stencil --glx-no-rebind-pixmap --glx-swap-method 5
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id compton
 #exec --no-startup-id compton --backend glx --vsync opengl-swc --glx-copy-from-front --glx-swap-method 5
 #exec --no-startup-id feh --bg-fill $wallpaper
 exec --no-startup-id udiskie --tray
-#exec --no-startup-id powerline-daemon -q
+#exec --no-startup-id emacs --daemon
 
 exec --no-startup-id fcitx -rd
 exec --no-startup-id dunst -fn Noto sans 12
 #exec --no-startup-id chromium
 exec --no-startup-id google-chrome
 exec --no-startup-id thunderbird
-#exec --no-startup-id pidgin
+exec --no-startup-id pidgin
 #exec --no-startup-id sky
 #exec --no-startup-id ~/bin/nasa_bg.sh
 #exec --no-startup-id tor-browser-en
@@ -114,7 +120,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+d focus child
 
 set $workspace1 "1:Browser "
 set $workspace2 "2:Email "
@@ -196,19 +202,20 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    status_command i3blocks
-    font pango:pango:SauceCodePro Nerd Font Mono 10
-    colors {
-        background $bg-color
-	    	separator #757575
-        #                  border             background         text
-        focused_workspace  $bg-color          $bg-color          $text-color
-        inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-        urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-    }
-}
+#bar {
+#    status_command i3blocks
+#    font pango:pango:SauceCodePro Nerd Font Mono 10
+#    colors {
+#        background $bg-color
+#	    	separator #757575
+#        #                  border             background         text
+#        focused_workspace  $bg-color          $bg-color          $text-color
+#        inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+#        urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+#    }
+#}
 
+for_window [class="^.*"] border pixel 2
 #for_window [class="Chromium"] border none
 for_window [window_role="browser"] border none
 
@@ -218,7 +225,7 @@ assign [class="Thunderbird"] $workspace2
 assign [class="Emacs"] $workspace3
 assign [class="Pidgin" window_role="buddy_list"] $workspace4
 assign [class="Sky"] $workspace4
-assign [class="Tor Browser"] $workspace8
+#assign [class="Tor Browser"] $workspace8
 
 # scratchpad
 bindsym $mod+Shift+F12 move scratchpad

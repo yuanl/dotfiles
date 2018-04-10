@@ -5,3 +5,4 @@
 [submodule "doom-emacs/.emacs.d"]
 	path = doom-emacs/.emacs.d
 	url = https://github.com/hlissner/.emacs.d
+	branch = develop

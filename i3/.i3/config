@@ -38,10 +38,11 @@ floating_modifier $mod
 bindsym $mod+Return exec termite -e /bin/zsh
 
 # editor: Alt+'
-bindsym $mod+apostrophe exec http_proxy="" emacs
+#bindsym $mod+apostrophe exec http_proxy="" emacsclient
+bindsym $mod+apostrophe exec XMODIFIERS=@im=fcitx LC_CTYPE=zh_CN.UTF-8 emacs
 
 # lock screen
-bindsym $mod+l exec i3lock -i $wallpaper
+bindsym $mod+Control+l exec i3lock -i $wallpaper
 bindsym $mod+space exec rofi -show drun -lines 3 -eh 2 -width 100 -padding 400 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
 
 # start app
@@ -117,7 +118,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent

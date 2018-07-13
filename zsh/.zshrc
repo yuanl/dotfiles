@@ -22,12 +22,13 @@ alias e='emacsclient'
 alias vi='vim'
 
 # Setup proxy when in office
-if [ $(hostname) = "cnbjlx23123" ]; then
-    export http_proxy=http://localhost:3128
-    export https_proxy=$http_proxy
-    export all_proxy=$http_proxy
-    export no_proxy="localhost,127.0.0.1,.sonyericsson.net,.sonymobile.net"
-fi
+#if [ $(hostname) = "cnbjlx23123" ]; then
+#    export http_proxy=http://localhost:3128
+#    export https_proxy=$http_proxy
+#    export socks_proxy=socks://localhost:8010
+#    export all_proxy=$http_proxy
+#    export no_proxy="localhost,127.0.0.1,.sonyericsson.net,.sonymobile.net"
+#fi
 
 export TERM=xterm-256color
 

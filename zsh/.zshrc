@@ -33,4 +33,3 @@ alias vi='vim'
 export TERM=xterm-256color
 export PATH="/usr/local/sbin:$PATH"
 
-. "/Users/yuanl/.acme.sh/acme.sh.env"

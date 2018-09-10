@@ -2,6 +2,10 @@
 ;;; packages.el
 
 ;; * Disable
-(package! org-bullets :disable t)
+;; (package! org-bullets :disable t)
 ;; * Lang
+(package! docker)
 (package! graphviz-dot-mode)
+(package! tide)
+(package! vue-html-mode)
+(package! vue-mode)

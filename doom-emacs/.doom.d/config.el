@@ -10,3 +10,11 @@
 ;;  '((python     . t)
 ;;    (dot        . t)
 ;;    ))
+
+(map!
+    ;; Easier window navigation
+    :en "C-h"   #'evil-window-left
+    :en "C-j"   #'evil-window-down
+    :en "C-k"   #'evil-window-up
+    :en "C-l"   #'evil-window-right
+)

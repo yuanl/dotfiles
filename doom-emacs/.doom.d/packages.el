@@ -6,7 +6,7 @@
 ;; * Lang
 (package! docker)
 (package! dockerfile-mode)
-(package! dockerfile-compose-mode)
+(package! docker-compose-mode)
 (package! graphviz-dot-mode)
 (package! tide)
 (package! vue-html-mode)

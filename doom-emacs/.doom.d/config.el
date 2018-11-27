@@ -7,6 +7,12 @@
   (put 'dired-find-alternate-file 'disabled nil)
   )
 
+(def-package! elpy
+  :config
+  (setq python-shell-interpreter "ipython"
+        python-shell-interpreter-args "-i --simple-prompt")
+  )
+
 ;; (org-babel-do-load-languages
 ;;  'org-babel-load-languages
 ;;  '((python     . t)

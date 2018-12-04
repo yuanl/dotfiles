@@ -8,18 +8,13 @@
   )
 
 (def-package! eshell
-  :bind (("C-c C-e". eshell))
+  :bind (("C-c M-e". eshell))
   )
 
 (def-package! elpy
   :config
   (setq python-shell-interpreter "ipython"
         python-shell-interpreter-args "-i --simple-prompt")
-  )
-
-(def-package! org-jira
-  :config
-  (setq jiralib-url "http://jira.sonymobile.net/")
   )
 
 ;; (use-package exwm

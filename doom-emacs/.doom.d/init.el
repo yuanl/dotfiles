@@ -16,10 +16,10 @@
 
        :completion
        (company           ; the ultimate code completion backend
-        +auto)
+        +auto
+        +tng)
        (helm              ; the *other* search engine for love and life
-        +fuzzy
-        +childframe)
+        +fuzzy)
        ;;ido              ; the other *other* search engine...
        ;;ivy              ; a search engine for love and life
 
@@ -48,12 +48,16 @@
 
        :editor
        ;;(format +onsave)  ; automated prettiness
+       ;;lispy             ; vim for lisp, for people who dont like vim
        multiple-cursors  ; editing in many places at once
        ;;parinfer          ; turn lisp into python, sort of
        rotate-text       ; cycle region at point between text candidates
 
        :emacs
-       dired             ; making dired pretty [functional]
+       (dired            ; making dired pretty [functional]
+        +ranger         ; bringing the goodness of ranger to dired
+        ;; +icons          ; colorful icons for dired-mode
+        )
        ediff             ; comparing files in Emacs
        electric          ; smarter, keyword-based electric-indent
        eshell            ; a consistent, cross-platform shell (WIP)
@@ -139,7 +143,7 @@
        ;;(email +gmail)    ; emacs as an email client
        ;;irc               ; how neckbeards socialize
        ;;(rss +org)        ; emacs as an RSS reader
-       twitter           ; twitter client https://twitter.com/vnought
+       ;;twitter           ; twitter client https://twitter.com/vnought
        ;;(write            ; emacs as a word processor (latex + org + markdown)
        ;; +wordnut         ; wordnet (wn) search
        ;; +langtool)       ; a proofreader (grammar/style check) for Emacs

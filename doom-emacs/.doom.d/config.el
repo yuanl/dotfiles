@@ -8,7 +8,7 @@
   )
 
 (def-package! eshell
-  :bind (("C-c M-e". eshell))
+  :bind (("C-c C-e". eshell))
   )
 
 (def-package! elpy

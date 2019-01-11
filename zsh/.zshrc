@@ -6,6 +6,7 @@ antigen bundles <<EOBUNDLES
     command-not-found
     git
     kennethreitz/autoenv
+    MichaelAquilina/zsh-autoswitch-virtualenv
     nojhan/liquidprompt
 #    pip
     ssh-agent
@@ -32,7 +33,5 @@ alias vi='vim'
 
 export TERM=xterm-256color
 export PATH="/usr/local/sbin:$PATH"
-
-source /usr/local/bin/virtualenvwrapper.sh
 
 tldr -r

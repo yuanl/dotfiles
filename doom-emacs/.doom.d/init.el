@@ -10,8 +10,7 @@
         +docsets)        ; ...or in Dash docsets locally
        snippets          ; my elves. They type so I don't have to
        spellcheck        ; tasing you for misspelling mispelling
-       (syntax-checker    ; tasing you for every semicolon you forget
-        +childframe)
+       syntax-checker    ; tasing you for every semicolon you forget
        workspaces        ; tab emulation, persistence & separate workspaces
 
        :completion
@@ -41,13 +40,13 @@
         +defaults)       ; default popup rules
        ;;pretty-code       ; replace bits of code with pretty symbols
        ;;tabbar            ; FIXME an (incomplete) tab bar for Emacs
-       unicode           ; extended unicode support for various languages
+       ;;unicode           ; extended unicode support for various languages
        vc-gutter         ; vcs diff in the fringe
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
        window-select     ; visually switch windows
 
        :editor
-       ;;(format +onsave)  ; automated prettiness
+       (format +onsave)  ; automated prettiness
        ;;lispy             ; vim for lisp, for people who dont like vim
        multiple-cursors  ; editing in many places at once
        ;;parinfer          ; turn lisp into python, sort of
@@ -158,7 +157,6 @@
        ;;literate
 
        ;; The default module sets reasonable defaults for Emacs. It also
-       ;; provides a Spacemacs-inspired keybinding scheme, a custom yasnippet
-       ;; library, and additional ex commands for evil-mode. Use it as a
-       ;; reference for your own modules.
-       (default +bindings +evil-commands))
+       ;; provides a Spacemacs-inspired keybinding scheme and a smartparens
+       ;; config. Use it as a reference for your own modules.
+       (default +bindings +smartparens +evil-bindings))

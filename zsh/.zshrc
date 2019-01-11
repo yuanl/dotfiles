@@ -7,7 +7,7 @@ antigen bundles <<EOBUNDLES
     git
     kennethreitz/autoenv
     nojhan/liquidprompt
-    pip
+#    pip
     ssh-agent
     sudo
     zdharma/fast-syntax-highlighting
@@ -33,3 +33,6 @@ alias vi='vim'
 export TERM=xterm-256color
 export PATH="/usr/local/sbin:$PATH"
 
+source /usr/local/bin/virtualenvwrapper.sh
+
+tldr -r

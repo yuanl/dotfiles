@@ -33,5 +33,10 @@ alias vi='vim'
 
 export TERM=xterm-256color
 export PATH="/usr/local/sbin:$PATH"
+#export PIPENV_PYPI_MIRROR="https://mirrors.ustc.edu.cn/pypi/web/simple"
 
-tldr -r
+if [ -x /usr/local/bin/tldr ]; then
+    tldr -r
+
+fi
+

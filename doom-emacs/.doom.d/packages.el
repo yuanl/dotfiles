@@ -2,18 +2,23 @@
 ;;; packages.el
 
 ;; * Disable
-(package! org-bullets :disable t)
-;; * Lang
-;;(package! exwm)
-(package! arduino-mode)
-(package! dired-narrow)
-(package! dired-k :disable t)
-(package! docker)
-(package! dockerfile-mode)
-(package! docker-compose-mode)
-(package! elpy)
-(package! graphviz-dot-mode)
-(package! platformio-mode)
-(package! tide)
-(package! vue-html-mode)
-(package! vue-mode)
+(disable-packages!
+  anaconda-mode
+  dired-k
+  org-bullets
+  )
+
+(packages!
+  arduino-mode
+  dired-narrow
+  docker
+  docker-compose-mode
+  dockerfile-mode
+  elpy
+  ;; exwm
+  graphviz-dot-mode
+  platformio-mode
+  tide
+  vue-html-mode
+  vue-mode
+  )

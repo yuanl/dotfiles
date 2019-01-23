@@ -12,10 +12,43 @@
   )
 
 (def-package! elpy
-  :config
-  (setq python-shell-interpreter "ipython"
-        python-shell-interpreter-args "-i --simple-prompt")
+  ;; :config
+  ;; (setq python-shell-interpreter "ipython"
+  ;;       python-shell-interpreter-args "-i --simple-prompt")
   )
+
+(def-package! dired-narrow
+  :bind (:map dired-mode-map
+              ("/" . dired-narrow-fuzzy))
+  )
+
+(def-package! irony
+  :commands (irony-mode))
+
+(def-package! irony-eldoc
+  :commands (irony-eldoc))
+
+(def-package! platformio-mode
+  :commands (platformio-conditionally-enable)
+  :hook (
+         ((irony-mode irony-eldoc platformio-conditionally-enable) . arduino-mode)
+         )
+  )
+
+
+;; (defun irony-use-async-ac ()
+;;   (define-key irony-mode-map [remap completion-at-point]
+;;     'irony-completion-at-point-async)
+
+;;   (define-key irony-mode-map [remap completion-symbol]
+;;     'irony-completion-at-point-async)
+;;   (irony-cdb-autosetup-compile-options))
+
+;; (add-hook 'irony-mode-hook 'irony-use-async-ac)
+
+;; (def-package! flycheck-irony
+;;   :defer 2
+;;   :init (add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
 ;; (use-package exwm
 ;;   ;:disabled f

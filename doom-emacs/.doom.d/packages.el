@@ -2,11 +2,12 @@
 ;;; packages.el
 
 ;; * Disable
-;; (package! org-bullets :disable t)
+(package! org-bullets :disable t)
 ;; * Lang
 ;;(package! exwm)
 (package! arduino-mode)
 (package! dired-narrow)
+(package! dired-k :disable t)
 (package! docker)
 (package! dockerfile-mode)
 (package! docker-compose-mode)

@@ -1,6 +1,17 @@
 ;;; ~/dotfiles/doom-emacs/.doom.d/config.el -*- lexical-binding: t; -*-
 
 (setq doom-font (font-spec :family "Iosevka" :size 16))
+(add-hook 'window-setup-hook 'toggle-frame-maximized)
+
+(def-package! dashboard
+  :config
+  (setq dashboard-items '((recents  . 5)
+                        (projects . 5)
+                        (agenda . 5)
+                        (bookmarks . 5)
+                        (registers . 5)))
+  (dashboard-setup-startup-hook)
+  )
 
 (def-package! dired
   :config
@@ -62,3 +73,4 @@
 ;;  '((python     . t)
 ;;    (dot        . t)
 ;;    ))
+

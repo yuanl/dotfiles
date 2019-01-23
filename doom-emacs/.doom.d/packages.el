@@ -10,6 +10,7 @@
 
 (packages!
   arduino-mode
+  dashboard
   dired-narrow
   docker
   docker-compose-mode
@@ -17,6 +18,7 @@
   elpy
   ;; exwm
   graphviz-dot-mode
+  page-break-lines
   platformio-mode
   tide
   vue-html-mode

@@ -3,6 +3,13 @@
 (setq doom-font (font-spec :family "Iosevka" :size 16))
 (add-hook 'window-setup-hook 'toggle-frame-maximized)
 
+(map!
+  "M-o" 'ace-window
+  "C-C C-e" 'eshell
+  :map dired-mode-map
+  "/" 'dired-narrow-fuzzy
+  )
+
 (def-package! dashboard
   :config
   (setq dashboard-items '((recents  . 5)
@@ -10,27 +17,17 @@
                         (agenda . 5)
                         (bookmarks . 5)
                         (registers . 5)))
-  (dashboard-setup-startup-hook)
-  )
+  (dashboard-setup-startup-hook))
 
 (def-package! dired
   :config
   (put 'dired-find-alternate-file 'disabled nil)
   )
 
-(def-package! eshell
-  :bind (("C-c C-e". eshell))
-  )
-
 (def-package! elpy
   ;; :config
   ;; (setq python-shell-interpreter "ipython"
   ;;       python-shell-interpreter-args "-i --simple-prompt")
-  )
-
-(def-package! dired-narrow
-  :bind (:map dired-mode-map
-              ("/" . dired-narrow-fuzzy))
   )
 
 (def-package! irony

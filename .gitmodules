@@ -6,3 +6,6 @@
 	path = doom-emacs/.emacs.d
 	url = https://github.com/hlissner/.emacs.d
 	branch = develop
+[submodule "purcell-emacs/.emacs.d"]
+	path = purcell-emacs/.emacs.d
+	url = https://github.com/purcell/emacs.d

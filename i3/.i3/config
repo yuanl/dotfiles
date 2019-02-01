@@ -35,7 +35,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec termite -e /bin/zsh
+bindsym $mod+Return exec termite -e /usr/bin/fish
 
 # editor: Alt+'
 #bindsym $mod+apostrophe exec http_proxy="" emacsclient

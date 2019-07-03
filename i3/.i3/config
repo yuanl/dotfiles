@@ -46,14 +46,9 @@ bindsym $mod+Control+l exec i3lock -i $wallpaper
 bindsym $mod+space exec rofi -show drun -lines 3 -eh 2 -width 100 -padding 400 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
 
 # start app
-#bindsym $mod+F12 exec chromium-browser
-
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-#exec --no-startup-id compton
-#exec --no-startup-id compton --backend glx --vsync opengl-swc --glx-copy-from-front --glx-swap-method 5
-#exec --no-startup-id feh --bg-fill $wallpaper
 exec --no-startup-id udiskie --tray
-#exec --no-startup-id emacs --daemon
+exec --no-startup-id /usr/bin/synergys
 
 exec --no-startup-id fcitx -rd
 exec --no-startup-id dunst -fn Noto sans 12

@@ -56,13 +56,13 @@ exec --no-startup-id dunst -fn Noto sans 12
 exec --no-startup-id google-chrome
 exec --no-startup-id thunderbird
 exec --no-startup-id pidgin
-#exec --no-startup-id sky
-#exec --no-startup-id ~/bin/nasa_bg.sh
+exec --no-startup-id ~/bin/nasa_bg.sh
 #exec --no-startup-id tor-browser-en
 
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nm-applet
+exec --no-startup-id mount ~/org/nas
 
 # kill focused window
 bindsym $mod+Shift+q kill

@@ -37,7 +37,6 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty -e /usr/bin/fish
 
 # editor: Alt+'
-#bindsym $mod+apostrophe exec http_proxy="" emacsclient
 bindsym $mod+apostrophe exec XMODIFIERS=@im=fcitx LC_CTYPE=zh_CN.UTF-8 emacs
 
 # lock screen

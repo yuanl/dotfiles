@@ -70,9 +70,9 @@ bindsym Print exec "scrot ~/Downloads/Screenshot%Y-%m-%d%H:%M:%S.png"
 bindsym $mod+Print exec "scrot -u ~/Downloads/Screenshot%Y-%m-%d%H:%M:%S.png"
 
 # change focus
-bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
+bindsym $mod+h focus left
 bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:

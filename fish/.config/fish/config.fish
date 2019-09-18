@@ -6,3 +6,7 @@ if not functions -q fisher
     fish -c fisher
 end
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
+function fish_title
+  true
+end

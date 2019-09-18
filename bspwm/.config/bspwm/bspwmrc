@@ -1,0 +1,48 @@
+#! /bin/sh
+
+# sudo localedef -f UTF-8 -i de_AT de_AT.UTF-8
+
+sxhkd &
+
+polybar rome -r &
+
+# sh ~/.config/bspwm/fehbg
+
+xrdb -merge ~/.Xresources
+
+$HOME/bin/nasa_bg.sh &
+
+# mpd &
+
+nm-applet &
+
+# compton --config ~/.config/compton.conf &
+
+udiskie -a -t &
+
+/usr/bin/synergys &
+
+fcitx -rd &
+
+dunst -fn Noto sans 12 &
+
+/usr/bin/davmail $HOME/dotfiles/davmail/davmail.properties &
+thunderbird &
+
+bspc monitor -d web mail editor terminal tor VI VII VIII IX
+
+bspc config border_width        3
+bspc config normal_border_color "#b5b49c"
+bspc config active_border_color "#b5b49c"
+bspc config focused_border_color "#213b59"
+bspc config window_gap          0
+bspc config single_monocle      true
+
+bspc config split_ratio                 0.5
+bspc config focus_follows_pointer       true
+
+bspc config click_to_focus any
+
+bspc rule -a Chromium|Chrome desktop=web
+bspc rule -a Thunderbird desktop=mail
+bspc rule -a Emacs desktop=editor

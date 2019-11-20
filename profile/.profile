@@ -29,3 +29,13 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 setxkbmap -option ctrl:nocaps       # Make Caps Lock a Control key
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv >/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+    if command -v pyenv-virtualenv >/dev/null 2>&1; then
+        eval "$(pyenv virtualenv-init -)"
+    fi
+fi

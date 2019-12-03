@@ -55,6 +55,33 @@ bspc config pointer_action2 resize_corner
 
 bspc rule -a "Google-chrome" desktop=web
 bspc rule -a Thunderbird desktop=mail
-bspc rule -a Emacs desktop=editor follow=on
+bspc rule -a Emacs desktop=editor follow=on state=tiled
 bspc rule -a "Tor Browser" desktop=tor
 bspc rule -a "Pidgin" desktop=VI
+
+## need to be floating
+bspc rule -a Audacious state=floating follow=on
+bspc rule -a Conky state=floating follow=on
+bspc rule -a Viewnior state=floating follow=on
+bspc rule -a feh state=floating follow=on
+bspc rule -a Gpicview state=floating follow=on
+bspc rule -a L3afpad state=floating follow=on
+bspc rule -a Leafpad state=floating follow=on
+bspc rule -a Gnome-calculator state=floating follow=on
+bspc rule -a Gparted state=floating follow=on
+bspc rule -a Nitrogen state=floating follow=on
+bspc rule -a feh state=floating follow=on
+bspc rule -a Preferences state=floating follow=on
+bspc rule -a dialog state=floating follow=on
+bspc rule -a menu state=floating follow=on
+bspc rule -a pop-up state=floating follow=on
+bspc rule -a task_dialog state=floating follow=on
+bspc rule -a bubble state=floating follow=on
+bspc rule -a Places state=floating follow=on
+bspc rule -a Biblioteca state=floating follow=on
+bspc rule -a 'Seleccionar un archivo' state=floating follow=on
+bspc rule -a Confirm state=floating follow=on
+bspc rule -a Confirmar state=floating follow=on
+bspc rule -a 'Acerca de Mozilla Firefox' state=floating follow=on
+bspc rule -a 'About Mozilla Firefox' state=floating follow=on
+bspc rule -a 'Buscar archivos' state=floating follow=on

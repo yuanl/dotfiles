@@ -41,4 +41,3 @@ if [ -x /usr/local/bin/tldr ]; then
 fi
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

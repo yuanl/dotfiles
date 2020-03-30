@@ -30,7 +30,7 @@ udiskie -a -t -F &
 
 fcitx -rd &
 
-dunst -fn Noto sans 12 &
+dunst &
 
 google-chrome --restore-last-session &
 

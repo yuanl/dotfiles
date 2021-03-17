@@ -9,8 +9,6 @@ end
 # Disable greeting
 set fish_greeting
 
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
-
 function fish_title
-  true
+    true
 end

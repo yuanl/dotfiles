@@ -46,15 +46,16 @@ yabai -m config layout                       bsp
 # yabai -m config window_gap                   06
 
 # named space
-yabai -m space 1 --label communicate
-yabai -m space 2 --label browser
+yabai -m space 1 --label browser
+yabai -m space 2 --label communicate
 yabai -m space 3 --label editor
 yabai -m space 4 --label console
 
 # pin app on space
+yabai -m rule --add app="Safari|Firefox" space=browser
 yabai -m rule --add app="^Microsoft Outlook$" space=communicate
 yabai -m rule --add app="^Slack$" space=communicate
-yabai -m rule --add app=Emacs space=editor manage=on
+yabai -m rule --add app=Emacs space=editor
 
 # float system preferences
 yabai -m rule --add app="^System Preferences$" manage=off

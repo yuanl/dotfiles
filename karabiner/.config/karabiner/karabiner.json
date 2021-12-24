@@ -1,7 +1,7 @@
 {
     "global": {
         "check_for_updates_on_startup": false,
-        "show_in_menu_bar": false,
+        "show_in_menu_bar": true,
         "show_profile_name_in_menu_bar": false
     },
     "profiles": [
@@ -69,27 +69,34 @@
                         ]
                     },
                     {
-                        "description": "Change left_command to option+shift",
+                        "description": "Change rcmd key to (meh) control+option+shift if pressed with other keys",
                         "manipulators": [
                             {
-                            "type": "basic",
-                            "from": {
-                                "key_code": "right_command",
-                                "modifiers": {
-                                    "optional": [
-                                        "any"
-                                    ]
-                                }
-                            },
-                            "to": [
-                                {
-                                "key_code": "left_shift",
-                                "modifiers": [
-                                    "left_option"
-                                ]
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": [
+                                            "left_control",
+                                            "left_option"
+                                        ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "hold_down_milliseconds": 100,
+                                        "key_code": "right_command"
+                                    }
+                                ],
+                                "type": "basic"
                             }
-                            ]
-                        }
                         ]
                     }
                 ]
@@ -222,7 +229,28 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [],
+            "simple_modifications": [
+                {
+                    "from": {
+                        "key_code": "grave_accent_and_tilde"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_shift"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "non_us_backslash"
+                    },
+                    "to": [
+                        {
+                            "key_code": "grave_accent_and_tilde"
+                        }
+                    ]
+                }
+            ],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,

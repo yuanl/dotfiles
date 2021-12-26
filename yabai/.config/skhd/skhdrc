@@ -167,8 +167,8 @@ meh - f : yabai -m window --toggle zoom-fullscreen
 #           yabai -m window --toggle pip
 
 # Reload skhd / yabai
-meh + cmd - q : port reload skhd
-meh + cmd - backspace : port reload yabai
+meh + cmd - q : port reload skhd && osascript -e 'display notification "skhd reload" with title "skhd"'
+meh + cmd - backspace : port reload yabai && osascript -e 'display notification "yabai reload" with title "yabai"'
 
 # Application shortcuts
 meh - return : open -a /Applications/iTerm.app

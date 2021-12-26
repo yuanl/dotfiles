@@ -55,7 +55,7 @@ yabai -m space 4 --label console
 yabai -m rule --add app="Safari|Firefox" space=browser
 yabai -m rule --add app="^Microsoft Outlook$" space=communicate
 yabai -m rule --add app="^Slack$" space=communicate
-yabai -m rule --add app=Emacs space=editor
+yabai -m rule --add app=Emacs space=editor manage=on
 
 # float system preferences
 yabai -m rule --add app="^System Preferences$" manage=off

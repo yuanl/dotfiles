@@ -47,15 +47,17 @@ yabai -m config layout                       bsp
 
 # named space
 yabai -m space 1 --label browser
-yabai -m space 2 --label communicate
-yabai -m space 3 --label editor
-yabai -m space 4 --label console
+yabai -m space 2 --label mail
+yabai -m space 3 --label communicate
+yabai -m space 4 --label browser-2
+yabai -m space 5 --label editor
+yabai -m space 6 --label console
 
 # pin app on space
 # yabai -m rule --add app="Safari|Firefox" space=browser
-yabai -m rule --add app="^Microsoft Outlook$" space=communicate
+# yabai -m rule --add app="^Microsoft Outlook$" space=mail
 yabai -m rule --add app="^Slack$" space=communicate
-yabai -m rule --add app="^Emacs$" space=editor manage=on
+# yabai -m rule --add app="^Emacs$" space=editor manage=on
 
 # float system preferences
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
@@ -74,5 +76,11 @@ yabai -m rule --add app="^Spotlight$" manage=off
 
 yabai -m rule --add app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add app="^qemu-system-x86_64$" title="^QEMU$" manage=off
+yabai -m rule --add app="^Logi Options$" manage=off
+yabai -m rule --add app="^1Password 7$" manage=off
+yabai -m rule --add app="^Alfred Preferences$" manage=off
+
+yabai -m rule --add app="^Messages$" manage=off
+yabai -m rule --add app="^Emacs" manage=off
 
 echo "yabai configuration loaded.."

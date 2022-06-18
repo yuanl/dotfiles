@@ -85,6 +85,17 @@ meh - d : yabai -m window --focus east
 meh - p : yabai -m window --focus prev || yabai -m window --focus last
 meh - n : yabai -m window --focus next || yabai -m window --focus first
 
+ctrl + cmd - w : yabai -m window --focus north
+ctrl + cmd - up : yabai -m window --focus north
+ctrl + cmd - s : yabai -m window --focus south
+ctrl + cmd - down : yabai -m window --focus south
+ctrl + cmd - a : yabai -m window --focus west
+ctrl + cmd - left : yabai -m window --focus west
+ctrl + cmd - d : yabai -m window --focus east
+ctrl + cmd - right : yabai -m window --focus east
+ctrl + cmd - p : yabai -m window --focus prev || yabai -m window --focus last
+ctrl + cmd - n : yabai -m window --focus next || yabai -m window --focus first
+
 # swap managed window
 # shift + alt - h : yabai -m window --swap north
 meh + cmd - w : yabai -m window --swap north
@@ -93,6 +104,13 @@ meh + cmd - a : yabai -m window --swap west
 meh + cmd - d : yabai -m window --swap east
 meh + cmd - p : yabai -m window --swap prev
 meh + cmd - n : yabai -m window --swap next
+
+ctrl + shift + cmd - w : yabai -m window --swap north
+ctrl + shift + cmd - s : yabai -m window --swap south
+ctrl + shift + cmd - a : yabai -m window --swap west
+ctrl + shift + cmd - d : yabai -m window --swap east
+ctrl + shift + cmd - p : yabai -m window --swap prev
+ctrl + shift + cmd - n : yabai -m window --swap next
 
 # move managed window
 # shift + cmd - h : yabai -m window --warp east
@@ -124,12 +142,29 @@ meh - 2 : yabai -m window --space 2
 meh - 3 : yabai -m window --space 3
 meh - 4 : yabai -m window --space 4
 meh - 5 : yabai -m window --space 5
+meh - 6 : yabai -m window --space 6
+meh - 7 : yabai -m window --space 7
+meh - 8 : yabai -m window --space 8
+meh - 9 : yabai -m window --space 9
+
+# ctrl + shift + cmd - 1 : yabai -m window --space 1
+# ctrl + shift + cmd - 2 : yabai -m window --space 2
+# ctrl + shift + cmd - 3 : yabai -m window --space 3
+# ctrl + shift + cmd - 4 : yabai -m window --space 4
+# ctrl + shift + cmd - 5 : yabai -m window --space 5
+# ctrl + shift + cmd - 6 : yabai -m window --space 6
+# ctrl + shift + cmd - 7 : yabai -m window --space 7
+# ctrl + shift + cmd - 8 : yabai -m window --space 8
+# ctrl + shift + cmd - 9 : yabai -m window --space 9
 
 # focus monitor
 # ctrl + alt - z  : yabai -m display --focus prev
 # ctrl + alt - 3  : yabai -m display --focus 3
-meh - q : yabai -m display --focus prev
-meh - e : yabai -m display --focus next
+meh - 1 : yabai -m display --focus prev
+meh - 2 : yabai -m display --focus next
+
+ctrl + alt - left : yabai -m display --focus prev
+ctrl + alt - right : yabai -m display --focus next
 
 # send window to monitor and follow focus
 # ctrl + cmd - c  : yabai -m window --display next; yabai -m display --focus next
@@ -159,7 +194,7 @@ meh - f : yabai -m window --toggle zoom-fullscreen
 
 # float / unfloat window and center on screen
 meh - t : yabai -m window --toggle float;\
-          yabai -m window --grid 4:4:1:1:2:2
+          yabai -m window --grid 9:16:3:1:10:7
 
 # toggle sticky(+float), topmost, picture-in-picture
 # alt - p : yabai -m window --toggle sticky;\
@@ -168,8 +203,14 @@ meh - t : yabai -m window --toggle float;\
 
 # Reload skhd / yabai
 meh + cmd - q : port reload skhd && osascript -e 'display notification "skhd reload" with title "skhd"'
-meh + cmd - backspace : port reload yabai && osascript -e 'display notification "yabai reload" with title "yabai"'
+meh + cmd - y : port reload yabai && osascript -e 'display notification "yabai reload" with title "yabai"'
 
 # Application shortcuts
 meh - return : open -a /Applications/iTerm.app
 meh - f12 : open -n -a /Applications/Firefox.app
+
+# cmd + alt - return : open -a /Applications/iTerm.app
+# ctrl + cmd - f12 : open -n -a /Applications/Firefox.app
+
+# Open AWS 
+meh + cmd - 0 : /Users/lyuanli/Library/Python/3.8/bin/isengardcli webconsole lyuanli

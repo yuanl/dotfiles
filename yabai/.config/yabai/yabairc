@@ -81,6 +81,7 @@ yabai -m rule --add app="^1Password 7$" manage=off
 yabai -m rule --add app="^Alfred Preferences$" manage=off
 
 yabai -m rule --add app="^Messages$" manage=off
-yabai -m rule --add app="^Emacs" manage=off
+# yabai -m rule --add app="^Emacs" manage=off
+yabai -m rule --add app="^Emacs" title="^acm frame.*" manage=off
 
 echo "yabai configuration loaded.."

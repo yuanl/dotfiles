@@ -98,19 +98,21 @@ shift + cmd - right : yabai -m window --focus next || yabai -m display --focus n
 
 # swap managed window
 # shift + alt - h : yabai -m window --swap north
-meh + cmd - w : yabai -m window --swap north
-meh + cmd - s : yabai -m window --swap south
-meh + cmd - a : yabai -m window --swap west
-meh + cmd - d : yabai -m window --swap east
-meh + cmd - p : yabai -m window --swap prev
-meh + cmd - n : yabai -m window --swap next
+# meh + cmd - w : yabai -m window --swap north
+# meh + cmd - s : yabai -m window --swap south
+# meh + cmd - a : yabai -m window --swap west
+# meh + cmd - d : yabai -m window --swap east
+# meh + cmd - p : yabai -m window --swap prev
+# meh + cmd - n : yabai -m window --swap next
+shift + ctrl + alt - h : yabai -m window --swap west
+shift + ctrl + alt - l : yabai -m window --swap east
 
-ctrl + shift + cmd - w : yabai -m window --swap north
-ctrl + shift + cmd - s : yabai -m window --swap south
-ctrl + shift + cmd - a : yabai -m window --swap west
-ctrl + shift + cmd - d : yabai -m window --swap east
-ctrl + shift + cmd - p : yabai -m window --swap prev
-ctrl + shift + cmd - n : yabai -m window --swap next
+# ctrl + shift + cmd - w : yabai -m window --swap north
+# ctrl + shift + cmd - s : yabai -m window --swap south
+# ctrl + shift + cmd - a : yabai -m window --swap west
+# ctrl + shift + cmd - d : yabai -m window --swap east
+# ctrl + shift + cmd - p : yabai -m window --swap prev
+# ctrl + shift + cmd - n : yabai -m window --swap next
 
 # move managed window
 # shift + cmd - h : yabai -m window --warp east

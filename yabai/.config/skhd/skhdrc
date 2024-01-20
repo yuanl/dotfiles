@@ -139,15 +139,15 @@ shift + ctrl + alt - l : yabai -m window --swap east
 # send window to desktop and follow focus
 # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
 # shift + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
-meh - 1 : yabai -m window --space 1
-meh - 2 : yabai -m window --space 2
-meh - 3 : yabai -m window --space 3
-meh - 4 : yabai -m window --space 4
-meh - 5 : yabai -m window --space 5
-meh - 6 : yabai -m window --space 6
-meh - 7 : yabai -m window --space 7
-meh - 8 : yabai -m window --space 8
-meh - 9 : yabai -m window --space 9
+# meh - 1 : yabai -m window --space 1
+# meh - 2 : yabai -m window --space 2
+# meh - 3 : yabai -m window --space 3
+# meh - 4 : yabai -m window --space 4
+# meh - 5 : yabai -m window --space 5
+# meh - 6 : yabai -m window --space 6
+# meh - 7 : yabai -m window --space 7
+# meh - 8 : yabai -m window --space 8
+# meh - 9 : yabai -m window --space 9
 
 # ctrl + shift + cmd - 1 : yabai -m window --space 1
 # ctrl + shift + cmd - 2 : yabai -m window --space 2
@@ -204,15 +204,12 @@ meh - t : yabai -m window --toggle float;\
 #           yabai -m window --toggle pip
 
 # Reload skhd / yabai
-meh + cmd - q : port reload skhd && osascript -e 'display notification "skhd reload" with title "skhd"'
-meh + cmd - y : port reload yabai && osascript -e 'display notification "yabai reload" with title "yabai"'
+# meh + cmd - q : port reload skhd && osascript -e 'display notification "skhd reload" with title "skhd"'
+# meh + cmd - y : port reload yabai && osascript -e 'display notification "yabai reload" with title "yabai"'
 
 # Application shortcuts
-meh - return : open -a /Applications/iTerm.app
-meh - f12 : open -n -a /Applications/Firefox.app
+meh + cmd - return : open -a /Applications/iTerm.app
+meh + cmd - f : open -n -a /Applications/Firefox.app
 
-# cmd + alt - return : open -a /Applications/iTerm.app
-# ctrl + cmd - f12 : open -n -a /Applications/Firefox.app
-
-# Open AWS 
-meh + cmd - 0 : /Users/lyuanli/Library/Python/3.8/bin/isengardcli webconsole lyuanli
+# Open AWS
+# meh + cmd - 0 : /Users/lyuanli/Library/Python/3.8/bin/isengardcli webconsole lyuanli

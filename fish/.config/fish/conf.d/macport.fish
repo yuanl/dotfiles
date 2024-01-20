@@ -1,4 +1,4 @@
-set EMACS /Applications/MacPorts/EmacsMac.app
+set EMACS /Applications/MacPorts/Emacs.app
 
 if test -d /opt/local/bin
     set -g fish_user_paths /opt/local/bin /opt/local/libexec/gnubin $fish_user_paths

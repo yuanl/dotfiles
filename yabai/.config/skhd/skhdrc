@@ -209,7 +209,8 @@ meh - t : yabai -m window --toggle float;\
 
 # Application shortcuts
 meh + cmd - return : open -a /Applications/iTerm.app
-meh + cmd - f : open -n -a /Applications/Firefox.app
+meh + cmd - f : open -a /Applications/Firefox.app
+meh + cmd - e : open -a /Applications/Macports/Emacs.app
 
 # Open AWS
 # meh + cmd - 0 : /Users/lyuanli/Library/Python/3.8/bin/isengardcli webconsole lyuanli

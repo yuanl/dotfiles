@@ -86,6 +86,6 @@ yabai -m rule --add app="Messages" manage=off
 yabai -m rule --add app="Emacs" role="AXTextField" subrole="AXStandardWindow" manage=on
 
 yabai -m rule --add app="^Python$" manage=off
-yabai -m rule --add app="^Ryujinx$" manage=off
+yabai -m rule --add app="Ryujinx" manage=off
 
 echo "yabai configuration loaded.."

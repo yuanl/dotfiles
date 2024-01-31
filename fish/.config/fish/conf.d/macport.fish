@@ -9,3 +9,7 @@ if test -d {$EMACS}
     set -g fish_user_paths {$EMACS}/Contents/MacOS/ $fish_user_paths
 end
 
+if test -d /Applications/MacPorts/EmacsMac.app
+    set -g fish_user_paths /Applications/MacPorts/EmacsMac.app/Contents/MacOS/ $fish_user_paths
+end
+

@@ -82,8 +82,9 @@ yabai -m rule --add app="^Alfred Preferences$" manage=off
 
 yabai -m rule --add app="Messages" manage=off
 
-# yabai -m rule --add app="Emacs" manage=on
-yabai -m rule --add app="Emacs" subrole!="AXFloatingWindow" manage=on
+# fix: https://github.com/koekeishiya/yabai/issues/2046
+yabai -m rule --add app="Emacs" role="AXTextField" subrole="AXStandardWindow" manage=on
+
 yabai -m rule --add app="^Python$" manage=off
 yabai -m rule --add app="^Ryujinx$" manage=off
 

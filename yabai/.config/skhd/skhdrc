@@ -104,8 +104,8 @@ shift + cmd - right : yabai -m window --focus next || yabai -m display --focus n
 # meh + cmd - d : yabai -m window --swap east
 # meh + cmd - p : yabai -m window --swap prev
 # meh + cmd - n : yabai -m window --swap next
-shift + ctrl + alt - h : yabai -m window --swap west
-shift + ctrl + alt - l : yabai -m window --swap east
+shift + cmd + ctrl + alt - h : yabai -m window --swap west
+shift + cmd + ctrl + alt - l : yabai -m window --swap east
 
 # ctrl + shift + cmd - w : yabai -m window --swap north
 # ctrl + shift + cmd - s : yabai -m window --swap south
@@ -116,6 +116,8 @@ shift + ctrl + alt - l : yabai -m window --swap east
 
 # move managed window
 # shift + cmd - h : yabai -m window --warp east
+cmd + ctrl + alt - h : yabai -m window --display prev
+cmd + ctrl + alt - l : yabai -m window --display next
 
 # balance size of windows
 # shift + alt - 0 : yabai -m space --balance
@@ -204,8 +206,8 @@ meh - t : yabai -m window --toggle float;\
 #           yabai -m window --toggle pip
 
 # Reload skhd / yabai
-# meh + cmd - q : port reload skhd && osascript -e 'display notification "skhd reload" with title "skhd"'
-# meh + cmd - y : port reload yabai && osascript -e 'display notification "yabai reload" with title "yabai"'
+meh + cmd - k : skhd --stop-service && skhd --start-service && osascript -e 'display notification "skhd reload" with title "skhd"'
+meh + cmd - y : yabai --stop-service && yabai --start-service && osascript -e 'display notification "yabai reload" with title "yabai"'
 
 # Application shortcuts
 meh + cmd - return : open -a /Applications/iTerm.app

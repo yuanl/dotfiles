@@ -191,7 +191,7 @@ ctrl + alt - right : yabai -m display --focus next
 
 # toggle window zoom
 # alt - d : yabai -m window --toggle zoom-parent
-meh - f : yabai -m window --toggle zoom-fullscreen
+shift + cmd + alt - f : yabai -m window --toggle zoom-fullscreen
 
 # toggle window split type
 # alt - e : yabai -m window --toggle split

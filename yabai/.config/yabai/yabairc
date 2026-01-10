@@ -31,7 +31,6 @@ yabai -m config active_window_border_color   0xff775759
 yabai -m config normal_window_border_color   0xff555555
 yabai -m config insert_feedback_color        0xffd75f5f
 yabai -m config split_ratio                  0.58
-yabai -m config split_type                   auto
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
@@ -87,5 +86,6 @@ yabai -m rule --add app="Messages" manage=off
 
 yabai -m rule --add app="^Python$" manage=off
 yabai -m rule --add app="Ryujinx" manage=off
+yabai -m rule --add app="RetroArch" manage=off
 
 echo "yabai configuration loaded.."

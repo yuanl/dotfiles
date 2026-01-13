@@ -111,6 +111,8 @@ on-mode-changed = []
     #     activate
     # end tell'
     # '''
+    shift-alt-ctrl-cmd-enter = 'exec-and-forget open -a /Applications/iTerm.app'
+    shift-alt-ctrl-cmd-e = 'exec-and-forget open -a /Applications/Macports/Emacs.app'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'

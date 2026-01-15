@@ -122,6 +122,10 @@ on-mode-changed = []
     alt-k = 'focus up'
     alt-l = 'focus right'
 
+    # navigate workspace
+    ctrl-alt-h = 'workspace prev'
+    ctrl-alt-l = 'workspace next'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     alt-shift-h = 'move left'
     alt-shift-j = 'move down'
@@ -159,8 +163,8 @@ on-mode-changed = []
     alt-s = 'workspace S'
     alt-t = 'workspace T'
     alt-u = 'workspace U'
-    alt-v = 'workspace V'
-    alt-w = 'workspace W'
+    # alt-v = 'workspace V'
+    # alt-w = 'workspace W'
     # alt-x = 'workspace X'
     alt-y = 'workspace Y'
     alt-z = 'workspace Z'
@@ -192,8 +196,8 @@ on-mode-changed = []
     alt-shift-s = 'move-node-to-workspace S'
     alt-shift-t = 'move-node-to-workspace T'
     alt-shift-u = 'move-node-to-workspace U'
-    alt-shift-v = 'move-node-to-workspace V'
-    alt-shift-w = 'move-node-to-workspace W'
+    # alt-shift-v = 'move-node-to-workspace V'
+    # alt-shift-w = 'move-node-to-workspace W'
     # alt-shift-x = 'move-node-to-workspace X'
     alt-shift-y = 'move-node-to-workspace Y'
     alt-shift-z = 'move-node-to-workspace Z'
